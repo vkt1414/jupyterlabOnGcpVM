@@ -20,7 +20,7 @@ variable "instance_name" {
 
 variable "boot_disk_image" {
   type    = string
-  default = "c0-deeplearning-common-cu113-v20230412-debian-10"
+  default = "ml-images/c0-deeplearning-common-cu113-v20230412-debian-10"
 }
 
 variable "gpu_type" {
