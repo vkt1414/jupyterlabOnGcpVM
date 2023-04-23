@@ -34,6 +34,7 @@ resource "google_compute_instance" "jupyter" {
 
   guest_accelerator {
    type = var.gpu_type
+   count = 1
   }
 
 
