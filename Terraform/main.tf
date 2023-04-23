@@ -28,13 +28,10 @@ resource "google_compute_instance" "jupyter" {
   allow_stopping_for_update = true
   #min_cpu_platform          = "Intel Ice Lake"
 
-  shielded_instance_config {
-    enable_secure_boot = true
-  }
 
   guest_accelerator {
    type = var.gpu_type
-   count = 1
+   count = 1 
   }
 
 
