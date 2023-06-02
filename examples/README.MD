@@ -3,7 +3,7 @@
 <body>
   <h1> Jupyter Lab on a GCP VM!</h1>
   <h2>Introduction</h2>
-  <p>This repo contains the terraform template to install jupyterlab on docker in a GCP VM.</p>
+  <p>This repo contains the terraform template to install jupyterlab in a preemptible GCP VM with L4 GPU.</p>
   <h2>Prerequisites</h2>
   <p>You must have the following installed on your machine:</p>
   <ul>
@@ -17,9 +17,9 @@
   <pre><code>https://github.com/vkt1414/jupyterlabOnGcpVM.git</code></pre>
   <h3>Step 2: Navigate to the directory</h3>
   <p>Change your working directory to the cloned repository:</p>
-  <pre><code>cd jupyterlabOnGcpVM/Terraform</code></pre>
+  <pre><code>cd jupyterlabOnGcpVM/Terraform/examples</code></pre>
   <h3>Step 3: Configure the variables</h3>
-  <p>Edit the values in the <code>myvars.tfvars.example</code> file and rename it to <code>myvars.tfvars</code> file to match your desired configuration.</p>
+  <p>Edit the values in the <code>myvars.tfvars</code> file to match your desired configuration.</p>
   <h3>Step 4: Initialize Terraform</h3>
   <p>Run the following command to initialize Terraform:</p>
   <pre><code>terraform init</code></pre>
@@ -32,7 +32,7 @@
   <h3>Step 7: Access the Jupyter notebook</h3>
   <strong>Access the JupyterLab:</strong></p>
 
-  <p>After running the above command, Terraform will create a virtual machine instance on GCP with JupyterLab running on Docker. To access the JupyterLab:</p>
+  <p>After running the above command, Terraform will create a virtual machine instance on GCP with JupyterLab. To access the JupyterLab:</p>
   <ol>
     <li>Go to the <strong>Compute Engine</strong> section of your GCP console.</li>
     <li>Find the instance with the name you specified in your <code>myvars.tfvars</code> file.</li>
