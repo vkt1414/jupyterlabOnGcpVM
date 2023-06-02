@@ -3,7 +3,7 @@
 <body>
   <h1> Jupyter Lab on a GCP VM!</h1>
   <h2>Introduction</h2>
-  <p>This repo contains the terraform template to install jupyterlab in a preemptible GCP VM with L4 GPU.</p>
+  <p>This example contains the terraform template to install jupyterlab in a preemptible GCP VM with L4 GPU.</p>
   <h2>Prerequisites</h2>
   <p>You must have the following installed on your machine:</p>
   <ul>
